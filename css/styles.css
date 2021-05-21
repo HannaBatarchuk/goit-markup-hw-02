@@ -4,6 +4,7 @@
   --secondary-text-color: #757575;
   --extra-blue-color: #2196f3;
   --main-white-color: #ffffff;
+  --button-bg-color: #f5f4fa;
 }
 
 /* Убираем маркеры в списках по умолчанию */
@@ -27,7 +28,7 @@ header {
 .logo {
   width: 145px;
   height: 31px;
-  font-family: Raleway;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -44,13 +45,24 @@ header {
 }
 /* Стили навигации */
 .site-nav .link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--main-black-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--extra-blue-color);
 }
+.site-nav .link:active {
+  color: var(--extra-blue-color);
+}
 .header-address .header-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
   color: var(--secondary-text-color);
 }
 .header-address .header-link:hover,
@@ -69,8 +81,17 @@ body {
   background-color: #2f303a;
   color: var(--main-white-color);
 }
+.hero-text {
+  width: 696px;
+  height: 120px;
+  left: 420px;
+  top: 266px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
 .hero-button {
-  background: var(--extra-blue-color);
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -78,6 +99,7 @@ body {
   display: flex;
   align-items: center;
   text-align: center;
+  background-color: var(--extra-blue-color);
   color: var(--main-white-color);
 }
 /* Стили для секции преимуществ компании */
@@ -136,8 +158,53 @@ footer {
   font-weight: normal;
   color: var(--main-white-color);
 }
-.footer-link {
+.footer-contacts .footer-link {
   font-style: normal;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts .footer-link:hover,
+.footer-contacts .footer-link:focus {
+  color: var(--extra-blue-color);
+}
+
+/* Стили для страницы портфолио */
+.filter > .main {
+  display: none;
+}
+.buttons-list .buttons-list-element {
+  width: 128px;
+  height: 38px;
+  left: 583px;
+  top: 176px;
+  background-color: var(--button-bg-color);
+  color: var(--main-black-color);
+  border-radius: 4px;
+}
+.buttons-list .buttons-list-element:hover {
+  background-color: var(--extra-blue-color);
+  color: var(--main-white-color);
+  cursor: pointer;
+}
+.finished-product .main {
+  display: none;
+}
+
+.name-product {
+  width: 322px;
+  height: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  color: var(--main-black-color);
+}
+.type-product {
+  width: 322px;
+  height: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary-text-color);
 }
