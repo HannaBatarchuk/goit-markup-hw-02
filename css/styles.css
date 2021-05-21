@@ -1,0 +1,143 @@
+/* стили для index.html */
+:root {
+  --main-black-color: #212121;
+  --secondary-text-color: #757575;
+  --extra-blue-color: #2196f3;
+  --main-white-color: #ffffff;
+}
+
+/* Убираем маркеры в списках по умолчанию */
+li {
+  list-style-type: none;
+}
+/* Убираем подчеркивание в ссылках по умолчанию */
+a {
+  text-decoration: none;
+}
+/* Убираем курсив по умолчанию */
+address {
+  font-style: normal;
+}
+
+/* Шапка страницы */
+header {
+  background-color: var(--main-white-color);
+}
+/* Стили логотипа */
+.logo {
+  width: 145px;
+  height: 31px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+}
+.logo-main {
+  color: var(--extra-blue-color);
+}
+.logo-header {
+  color: var(--main-black-color);
+}
+.logo-footer {
+  color: var(--main-white-color);
+}
+/* Стили навигации */
+.site-nav .link {
+  color: var(--main-black-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--extra-blue-color);
+}
+.header-address .header-link {
+  color: var(--secondary-text-color);
+}
+.header-address .header-link:hover,
+.header-address .header-link:focus {
+  color: var(--extra-blue-color);
+}
+/* Основные стили контента страницы */
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+.main-section {
+  background-color: #e5e5e5;
+}
+.hero-section {
+  background-color: #2f303a;
+  color: var(--main-white-color);
+}
+.hero-button {
+  background: var(--extra-blue-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--main-white-color);
+}
+/* Стили для секции преимуществ компании */
+.advantages-section > .head {
+  display: none;
+}
+.advantage {
+  width: 270px;
+  height: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+.advantage-text {
+  width: 270px;
+  height: 75px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+/* Стили для секции услуг компании */
+.company-services > .head {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+/* Стили секции команда */
+.team-section {
+  background-color: #f5f4fa;
+}
+.our-team-head {
+  font-style: normal;
+  font-weight: bold;
+}
+.name-colleague {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.specialty {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+}
+/* Стили футера */
+footer {
+  background-color: #2f303a;
+}
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  color: var(--main-white-color);
+}
+.footer-link {
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
