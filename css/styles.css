@@ -2,12 +2,19 @@
 :root {
   --main-black-color: #212121;
   --secondary-text-color: #757575;
+  --hero-footer-bg-color: #2f303a;
   --extra-blue-color: #2196f3;
   --main-white-color: #ffffff;
-  --button-bg-color: #f5f4fa;
+  --secondary-bg-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
 /* Убираем маркеры в списках по умолчанию */
 li {
   list-style-type: none;
@@ -67,17 +74,9 @@ header {
   color: var(--extra-blue-color);
 }
 /* Основные стили контента страницы */
-body {
-  font-family: "Roboto", sans-serif;
-  color: var(--main-text-color);
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-.main-section {
-  background-color: #e5e5e5;
-}
+
 .hero-section {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-bg-color);
   color: var(--main-white-color);
   letter-spacing: 0.06em;
 }
@@ -98,12 +97,9 @@ body {
   cursor: pointer;
 }
 /* Стили для секции преимуществ компании */
-.advantages-section > .head {
-  display: none;
-}
-.advantage {
-  font-weight: 700;
+.advantages-head .advantage {
   font-size: 14px;
+  text-transform: uppercase;
 }
 .advantage-text {
   font-size: 14px;
@@ -112,16 +108,14 @@ body {
 }
 /* Стили для секции услуг компании */
 .company-services > .head {
-  font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
 /* Стили секции команда */
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bg-color);
 }
 .our-team-head {
-  font-weight: 700;
   font-size: 36px;
   text-align: center;
 }
@@ -135,7 +129,7 @@ body {
 }
 /* Стили футера */
 footer {
-  background-color: #2f303a;
+  background-color: var(--hero-footer-bg-color);
 }
 .footer-address {
   font-size: 14px;
@@ -152,14 +146,11 @@ footer {
 }
 
 /* Стили для страницы портфолио */
-.filter > .main {
-  display: none;
-}
 .buttons-list .buttons-list-element {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  background-color: var(--button-bg-color);
+  background-color: var(--secondary-bg-color);
   color: var(--main-black-color);
   border-radius: 4px;
 }
@@ -167,9 +158,6 @@ footer {
   background-color: var(--extra-blue-color);
   color: var(--main-white-color);
   cursor: pointer;
-}
-.finished-product .main {
-  display: none;
 }
 
 .name-product {
@@ -182,4 +170,16 @@ footer {
   font-size: 16px;
   line-height: 1.9;
   color: var(--secondary-text-color);
+}
+/* визуально скрытые заголовки секцый */
+.visually-hidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
